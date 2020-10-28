@@ -1,4 +1,5 @@
-To compile JSX
+Manage transpiler and JSX files
+
 - npm install --save-dev @babel/core @babel/cli
 Usage from command line: npx babel
 Logical groupings of plugins that can be enabled all in one batch. 
@@ -19,6 +20,9 @@ Compile JSX
 PRE-REQUESITE (see above): npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties
 - npx babel main.jsx --out-file main.js
 
+
+Manage Typescript
+
 Install typescript
 - npm install typescript
 Configure typescript
@@ -33,3 +37,26 @@ Using input file with tsc - as below - will not use tsconfig.json
 Without input file, it will compile all *.tsc of dir & subdirectories where tsconfig.json is stored
 --> tsc
 --> tsc --watch // tsc -w
+
+
+WEBPACK
+
+npm init -y
+npm install --save-dev webpack
+//create a src directory , and in it, create a file named index.js. For the contents of that file, write let a = 2; 
+let b = 5; 
+let c = a * b; 
+alert(c);
+npx webpack
+
+npx webpack init
+npm run start
+
+npm i -g webpack webpack-cli
+webpack init
+npm run start
+
+npm install --save-dev typescript ts-loader 
+//Next, we need to initialize a TypeScript project, and you know how to do that already, but remember, with TypeScript installed 
+//in the project, we’ll need to use npx: 
+npx tsc -init
