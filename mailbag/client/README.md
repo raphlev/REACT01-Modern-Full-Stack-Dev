@@ -1,4 +1,4 @@
-## Setting project
+# Setting project
 
 
 Create a client directory under the project root directory alongside the server directory.
@@ -6,9 +6,7 @@ Then, create a src directory in it.
 
 npm init
 
-## Adding modules
-
-# material, react , normalize css and axios for front-end
+# Adding material, react , normalize css and axios for front-end
 
 npm install --save @material-ui/core
 npm install --save @material-ui/icons
