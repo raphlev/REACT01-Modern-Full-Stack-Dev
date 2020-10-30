@@ -55,7 +55,9 @@ Update package.json :
 ```
 the -e option. By default, nodemon watched for changes in .js, .mjs, .coffee, .litcoffee, and .json files. With -e though, we can tell it to watch other types of tiles, .ts files in this case. The --exec option is used to tell nodemon what to do when those files change, so now any time nodemon sees changes to our TypeScript source files, it will execute the compile command.
 
-# start dev 
+# Execute SERVER
+
+Use dev script manually added to package.json
 
 ```
 npm run dev

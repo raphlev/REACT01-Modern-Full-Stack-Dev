@@ -132,3 +132,14 @@ Configuring react with webpack is difficult, create-react-app a a tool that does
   . https://www.newline.co/fullstack-react/p/using-webpack-with-create-react-app/
 
 In this project we configured react app and webpack manually
+
+# Execute CLIENT
+
+Use build script manually added to package.json
+
+```
+npm install
+npm run build
+```
+
+Browse to http://localhost/
