@@ -3,16 +3,16 @@
     "host" : "smtp.gmail.com",
     "port" : 465,
     "auth" : {
-      "user" : "raphaellevequeptc@gmail.com",
-      "pass" : "playback"
+      "user" : "gmailEmailAdress@gmail.com",
+      "pass" : "gmailPassword"
     }
   },
   "imap" : {
     "host" : "imap.gmail.com",
     "port" : 993,
     "auth" : {
-      "user" : "raphaellevequeptc@gmail.com",
-      "pass" : "playback"
+      "user" : "gmailEmailAdress@gmail.com",
+      "pass" : "gmailPassword"
     }
   }
 }
