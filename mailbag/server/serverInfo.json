@@ -1,18 +1,18 @@
 {
   "smtp" : {
-    "host" : "my_smtp_server_address",
+    "host" : "smtp.gmail.com",
     "port" : 465,
     "auth" : {
-      "user" : "my_smtp_username",
-      "pass" : "my_smtp_password"
+      "user" : "raphaellevequeptc@gmail.com",
+      "pass" : "playback"
     }
   },
   "imap" : {
-    "host" : "my_imap_server_address",
+    "host" : "imap.gmail.com",
     "port" : 993,
     "auth" : {
-      "user" : "my_imap_username",
-      "pass" : "my_imap_password"
+      "user" : "raphaellevequeptc@gmail.com",
+      "pass" : "playback"
     }
   }
 }
