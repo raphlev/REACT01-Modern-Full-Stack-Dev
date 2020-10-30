@@ -21,6 +21,12 @@ PRE-REQUESITE (see above): npm install --save-dev @babel/core @babel/cli @babel/
 - npx babel main.jsx --out-file main.js
 
 
+Manage ES6 modules
+
+https://www.spiria.com/fr/blogue/applications-web/systemjs-comment-inclure-les-modules-es6-dans-votre-navigateur/
+https://2ality.com/2014/09/es6-modules-final.html
+
+
 Manage Typescript
 
 Install typescript
