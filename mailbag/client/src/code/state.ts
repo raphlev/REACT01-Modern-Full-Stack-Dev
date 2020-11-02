@@ -158,20 +158,29 @@ export function createState(inParentComponent) {
 
 
     /**
-     * Add a mailbox to the list of mailboxes.
+     * Add mailboxes to the state.
      *
      * @param inMailbox A mailbox descriptor object.
      */
-    addMailboxToList : function(inMailbox: IMAP.IMailbox): void {
+    addMailboxToList : function(inMailbox: IMAP.IMailbox[]): void {
+      //inMailbox: IMAP.IMailbox
 
       console.log("state.addMailboxToList()", inMailbox);
 
       // Copy list.
-      const cl: IMAP.IMailbox[] = this.state.mailboxes.slice(0);
+      //const cl: IMAP.IMailbox[] = this.state.mailboxes.slice(0);
 
       // Add new element.
-      cl.push(inMailbox);
+      //cl.push(inMailbox);
 
+      // initialize list.
+      const cl: IMAP.IMailbox[] = [];
+
+      // Add new elements.
+      inMailbox.forEach((item) => {
+        cl.push(item);
+      });
+      
       // Update list in state.
       this.setState({ mailboxes : cl });
 
@@ -179,19 +188,30 @@ export function createState(inParentComponent) {
 
 
     /**
-     * Add a contact to the list of contacts.
+     * Add contacts to the state.
      *
      * @param inContact A contact descriptor object.
      */
-    addContactToList : function(inContact: Contacts.IContact): void {
+    addContactToList : function(inContact: Contacts.IContact[]): void {
+      //inContact: Contacts.IContact
 
       console.log("state.addContactToList()", inContact);
 
       // Copy list.
-      const cl = this.state.contacts.slice(0);
+      //const cl = this.state.contacts.slice(0);
 
       // Add new element.
-      cl.push({ _id : inContact._id, name : inContact.name, email : inContact.email });
+      // it is possible to update state using literal object
+      //cl.push({ _id : inContact._id, name : inContact.name, email : inContact.email });
+
+
+      // Initialize list.
+      const cl: Contacts.IContact[] = [];
+
+      // Add new elements.
+      inContact.forEach((item) => {
+        cl.push(item);
+      });
 
       // Update list in state.
       this.setState({ contacts : cl });
@@ -219,6 +239,28 @@ export function createState(inParentComponent) {
 
     }.bind(inParentComponent), /* End addMessageToList(). */
 
+    /**
+     * Add list of message to the list of messages in the current mailbox.
+     *
+     * @param inMessages List of messages descriptor object.
+     */
+    addMessagesToList : function(inMessages: IMAP.IMessage[]): void {
+
+      console.log("state.addMessagesToList()", inMessages);
+
+      // init list.
+      const cl: IMAP.IMessage[] = [];
+
+      // Add new element.
+      //cl.push({ id : inMessage.id, date : inMessage.date, from : inMessage.from, subject : inMessage.subject });
+      inMessages.forEach((inMessage: IMAP.IMessage) => {
+        cl.push(inMessage);
+      });
+
+      // Update list in state.
+      this.setState({ messages : cl });
+
+    }.bind(inParentComponent), /* End addMessagesToList(). */
 
     /**
      * Clear the list of messages currently displayed.
@@ -272,9 +314,10 @@ export function createState(inParentComponent) {
       this.state.showHidePleaseWait(false);
 
       this.state.clearMessages();
-      messages.forEach((inMessage: IMAP.IMessage) => {
-        this.state.addMessageToList(inMessage);
-      });
+      //messages.forEach((inMessage: IMAP.IMessage) => {
+        //this.state.addMessageToList(inMessage);
+      //});
+      this.state.addMessagesToList(messages);
 
     }.bind(inParentComponent), /* End getMessages(). */
 

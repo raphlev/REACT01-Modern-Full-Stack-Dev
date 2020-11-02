@@ -31,4 +31,4 @@ export let serverInfo: IServerInfo;
 // Read in the server information file.
 const rawInfo: string = fs.readFileSync(path.join(__dirname, "../serverInfo.json"));
 serverInfo = JSON.parse(rawInfo);
-console.log("ServerInfo: ", serverInfo);
+//console.log("ServerInfo: ", serverInfo);

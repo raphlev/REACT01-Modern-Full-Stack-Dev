@@ -21,18 +21,20 @@ baseComponent.state.showHidePleaseWait(true);
 async function getMailboxes() {
   const imapWorker: IMAP.Worker = new IMAP.Worker();
   const mailboxes: IMAP.IMailbox[] = await imapWorker.listMailboxes();
-  mailboxes.forEach((inMailbox) => {
-    baseComponent.state.addMailboxToList(inMailbox);
-  });
+  //mailboxes.forEach((inMailbox) => {
+    //baseComponent.state.addMailboxToList(inMailbox);
+    baseComponent.state.addMailboxToList(mailboxes);
+  //});
 }
 getMailboxes().then(function() {
   // Now go fetch the user's contacts.
   async function getContacts() {
     const contactsWorker: Contacts.Worker = new Contacts.Worker();
     const contacts: Contacts.IContact[] = await contactsWorker.listContacts();
-    contacts.forEach((inContact) => {
-      baseComponent.state.addContactToList(inContact);
-    });
+    //contacts.forEach((inContact) => {
+      //baseComponent.state.addContactToList(inContact);
+      baseComponent.state.addContactToList(contacts);
+    //});
   }
   getContacts().then(() => baseComponent.state.showHidePleaseWait(false));
 });

@@ -67,7 +67,6 @@ nodemon will begin monitoring our source TypeScript files. When any change, it w
 Note
 If compiler errors occur, nodemon will still try to start up the app because it doesn’t know not to. That obviously isn’t going to go well, so you need to keep an eye on your console when you make changes to ensure they’re valid and running when you expect them to be.
 
-
 # Enable gmail IMAP SMTP
 
 gmail > settings > Forwarding and POP/IMAP > IMAP Access
@@ -75,7 +74,6 @@ gmail > settings > Forwarding and POP/IMAP > IMAP Access
 https://mail.google.com/mail/u/0/#settings/fwdandpop
 
 Click Enable IMAP
-
 
 # Enable gmail account "Allow less secure applications" setting
 
@@ -94,6 +92,13 @@ Connection attempt blocked : Someone just used your password to try to sign in t
 
 Click "Enable" in https://myaccount.google.com/lesssecureapps
 See https://support.google.com/accounts/answer/6010255
+
+# Enable gmail show in imap
+
+Error when getting some mailbox like "All Mail"
+
+Log on to Gmail, go to Settings, Labels, and ensure ‘Show in IMAP’ is selected for all listed folders.
+https://mail.google.com/mail/u/0/#settings/labels
 
 # Test Server
 
