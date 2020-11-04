@@ -4,9 +4,11 @@
 
 - See https://drive.google.com/file/d/1AAtdpKBFXKo86IwdUjpZ8NOOXbMeiDI0/view?usp=sharing
 
-## Understanding module.exports and exports in Node.js
+## Understanding module.exports and exports in Node.js - Manage ES6 modules
 
 - See https://drive.google.com/file/d/1IL467709-fAH_ab4WKiXxLKq8G9Zpv0_/view?usp=sharing
+- See https://www.spiria.com/fr/blogue/applications-web/systemjs-comment-inclure-les-modules-es6-dans-votre-navigateur/
+- See https://2ality.com/2014/09/es6-modules-final.html
 
 ## Templating a TypeScript And Node project 
 
@@ -44,13 +46,6 @@ PRE-REQUESITE (see above):
 ```npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties```
 
 ```npx babel main.jsx --out-file main.js```
-
-
-# Manage ES6 modules
-
-- See https://www.spiria.com/fr/blogue/applications-web/systemjs-comment-inclure-les-modules-es6-dans-votre-navigateur/
-- See https://2ality.com/2014/09/es6-modules-final.html
-
 
 # Manage Typescript
 
