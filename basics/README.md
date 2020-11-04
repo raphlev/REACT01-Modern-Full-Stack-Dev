@@ -105,7 +105,6 @@ alert(c);
 
 ```npm install --save-dev typescript ts-loader```
 
-//Next, we need to initialize a TypeScript project, and you know how to do that already, but remember, with TypeScript installed 
-//in the project, we’ll need to use npx: 
+Next, we need to initialize a TypeScript project, and you know how to do that already, but remember, with TypeScript installed in the project, we’ll need to use npx: 
 
 ```npx tsc -init```
