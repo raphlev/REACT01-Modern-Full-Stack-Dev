@@ -2,15 +2,15 @@
 
 ## How to Setup a TypeScript + Node.js Project
 
-See https://drive.google.com/file/d/1AAtdpKBFXKo86IwdUjpZ8NOOXbMeiDI0/view?usp=sharing
+- See https://drive.google.com/file/d/1AAtdpKBFXKo86IwdUjpZ8NOOXbMeiDI0/view?usp=sharing
 
 ## Understanding module.exports and exports in Node.js
 
-See https://drive.google.com/file/d/1IL467709-fAH_ab4WKiXxLKq8G9Zpv0_/view?usp=sharing
+- See https://drive.google.com/file/d/1IL467709-fAH_ab4WKiXxLKq8G9Zpv0_/view?usp=sharing
 
 ## Templating a TypeScript And Node project 
 
-See https://github.com/raphlev/NodeJS-Swagger-Microservice-Template
+- See https://github.com/raphlev/NodeJS-Swagger-Microservice-Template
 
 # Manage transpiler and JSX files
 
@@ -61,7 +61,8 @@ Generate tsconfig.json : see typescriptlang.org/play for typical ES2017 configur
 
 ```tsc -init```
 
-tsc will compile all files in the current directory and subdirectories (if necessary) if a tsconfig.json file is present. If you know you need it to skip specific files though, you can add the exclude element, and then list the files not to compile. You can also explicitly include things with the files element. When you compile a TypeScript file with tsc, it’s really doing a transpilation. It’s “compiling” from TypeScript to JavaScript. Earlier, I said that tsc does much the same thing as Babel does, and that’s true in this regard. The implication of this is that TypeScript supports most ES6 features. It doesn’t support all of them, though, so it’s good to know which you should avoid. Fortunately, there is a handy chart you can use here: kangax.github.io/compat-table/es6.
+tsc will compile all files in the current directory and subdirectories (if necessary) if a tsconfig.json file is present. If you know you need it to skip specific files though, you can add the exclude element, and then list the files not to compile. You can also explicitly include things with the files element. When you compile a TypeScript file with tsc, it’s really doing a transpilation. It’s “compiling” from TypeScript to JavaScript. Earlier, I said that tsc does much the same thing as Babel does, and that’s true in this regard. The implication of this is that TypeScript supports most ES6 features. It doesn’t support all of them, though, so it’s good to know which you should avoid. Fortunately, there is a handy chart you can use here: 
+- kangax.github.io/compat-table/es6.
 
 Using input file with tsc - as below - will not use tsconfig.json
 
