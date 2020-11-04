@@ -14,9 +14,12 @@
 
 # Manage transpiler and JSX files
 
+Install: 
+
 ```npm install --save-dev @babel/core @babel/cli```
 
 Usage from command line: 
+
 ```npx babel```
 
 Logical groupings of plugins that can be enabled all in one batch. 
