@@ -257,6 +257,8 @@ app.delete("/contacts/:id",
 
 
 // Start app listening.
-app.listen(80, () => {
+// Do not use port 80 on linux server
+// Otherwise Error: listen EACCES: permission denied 0.0.0.0:80
+app.listen(8080, () => {
   console.log("MailBag server open for requests");
 });
