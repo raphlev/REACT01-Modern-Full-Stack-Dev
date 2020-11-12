@@ -169,7 +169,7 @@ export class Worker {
    * @param  inCallOptions An object implementing the ICallOptions interface.
    * @return               The plain text body of the message.
    */
-  public async getMessageBody(inCallOptions: ICallOptions): Promise<string> {
+  public async getMessageBody(inCallOptions: ICallOptions): Promise<string | boolean> {
 
     console.log("IMAP.Worker.getMessageBody()", inCallOptions);
 
@@ -186,7 +186,7 @@ export class Worker {
 
     await client.close();
 
-    return parsed.text;
+    return parsed.html;
 
   } /* End getMessageBody(). */
 

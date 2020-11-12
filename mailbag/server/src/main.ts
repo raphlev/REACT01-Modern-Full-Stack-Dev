@@ -100,12 +100,12 @@ app.get("/messages/:mailbox/:id",
     console.log("GET /messages/:mailbox/:id (4)", inRequest.params.mailbox, inRequest.params.id);
     try {
       const imapWorker: IMAP.Worker = new IMAP.Worker(serverInfo);
-      const messageBody: string = await imapWorker.getMessageBody({
+      const messageBody: string | boolean = await imapWorker.getMessageBody({
         mailbox : inRequest.params.mailbox,
         id : parseInt(inRequest.params.id, 10)
       });
       console.log("GET /messages/:mailbox/:id (4): Ok", messageBody);
-      inResponse.send(messageBody);
+      inResponse.send(messageBody ? messageBody : "" );
     } catch (inError) {
       console.log("GET /messages/:mailbox/:id (4): Error", inError);
       inResponse.send("error");
@@ -127,12 +127,12 @@ app.get("/messages/*",
     console.log("GET /messages/* (5) - resolved id number from request url: " + id); 
     try {
       const imapWorker: IMAP.Worker = new IMAP.Worker(serverInfo);
-      const messageBody: string = await imapWorker.getMessageBody({
+      const messageBody: string | Boolean = await imapWorker.getMessageBody({
         mailbox : mailbox,
         id : id
       });
       console.log("GET /messages/* (5): Ok", messageBody);
-      inResponse.send(messageBody);
+      inResponse.send(messageBody ? messageBody : "");
     } catch (inError) {
       console.log("GET /messages/* (5): Error", inError);
       inResponse.send("error");
