@@ -1,5 +1,14 @@
 # Some references
 
+## TypeScript Course for Beginners 2020 - Learn TypeScript from Scratch!
+https://www.youtube.com/watch?v=BwuLxPH8IDs
+
+ide: vsc with some config
+- ext eslint, material icon theme, path intellisense, prettier  
+(tslint mergerd to eslint - not necessary)
+
+- npm install --save-dev lite-server  --> "start": "lite-server"  --> always serves index.html and reload after change
+
 ## How to Setup a TypeScript + Node.js Project
 
 - See https://drive.google.com/file/d/1AAtdpKBFXKo86IwdUjpZ8NOOXbMeiDI0/view?usp=sharing
